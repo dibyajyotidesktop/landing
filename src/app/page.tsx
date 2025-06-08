@@ -127,7 +127,7 @@ export default function Page() {
             >
               <span className="text-2xl sm:text-3xl">🚧</span>
               <p className="text-lg sm:text-xl font-semibold text-gray-800 text-center sm:text-left">
-                <strong>We're not officially live yet</strong> – but you're getting early access!
+                <strong>We&apos;re not officially live yet</strong> – but you&apos;re getting early access!
               </p>
             </motion.div>
             <p className="text-gray-700 mt-3 text-base sm:text-lg relative z-10 text-center">
@@ -216,7 +216,7 @@ export default function Page() {
                 >
                   <BookOpen className="w-6 h-6 sm:w-8 sm:h-8" />
                 </motion.div>
-                <h3 className="text-2xl sm:text-4xl font-black text-center sm:text-left">On launch day, you'll get:</h3>
+                <h3 className="text-2xl sm:text-4xl font-black text-center sm:text-left">On launch day, you&apos;ll get:</h3>
               </div>
 
               <motion.div
@@ -314,7 +314,7 @@ export default function Page() {
               <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium">
                 Feel free to explore, bookmark the site, and follow us on socials for updates.
                 <br className="hidden sm:block" />
-                Let's fix the money game –{" "}
+                Let&apos;s fix the money game –{" "}
                 <span className="font-bold bg-gradient-to-r from-green-600 to-emerald-500 bg-clip-text text-transparent">
                   one smart step at a time.
                 </span>
@@ -410,7 +410,7 @@ export default function Page() {
                   Practical tips, investment hacks, and beginner-friendly finance guides
                 </p>
                 <p className="text-gray-600 text-base sm:text-lg">
-                  Hi, I'm{" "}
+                  Hi, I&apos;m{" "}
                   <span className="font-bold bg-gradient-to-r from-green-600 to-emerald-500 bg-clip-text text-transparent">
                     Dibyajoti Pandit
                   </span>
