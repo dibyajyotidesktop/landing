@@ -12,6 +12,7 @@ import {
   PiggyBank,
   Sparkles,
   Star,
+  FileText,
 } from "lucide-react"
 import Image from "next/image"
 
@@ -133,7 +134,7 @@ export default function Page() {
             <p className="text-gray-700 mt-3 text-base sm:text-lg relative z-10 text-center">
               Our full launch is coming on{" "}
               <strong className="text-green-700 bg-green-100 px-2 py-1 rounded-lg">
-                15th June 2025 at 7:30 PM IST
+                27th June 2025 from 12:21 PM to 12:45 PM IST
               </strong>
               , but feel free to take a look around.
             </p>
@@ -171,7 +172,7 @@ export default function Page() {
                   <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                 </motion.div>
                 <h3 className="text-2xl sm:text-4xl font-black bg-gradient-to-r from-gray-800 to-green-600 bg-clip-text text-transparent text-center sm:text-left">
-                  What is MintFix?
+                  💡 What is MintFix?
                 </h3>
               </div>
               <p className="text-lg sm:text-xl text-gray-700 text-center leading-relaxed font-medium">
@@ -216,7 +217,7 @@ export default function Page() {
                 >
                   <BookOpen className="w-6 h-6 sm:w-8 sm:h-8" />
                 </motion.div>
-                <h3 className="text-2xl sm:text-4xl font-black text-center sm:text-left">On launch day, you&apos;ll get:</h3>
+                <h3 className="text-2xl sm:text-4xl font-black text-center sm:text-left">📘 On launch day, you&apos;ll get:</h3>
               </div>
 
               <motion.div
@@ -281,7 +282,7 @@ export default function Page() {
             <div className="absolute inset-0 bg-gradient-to-br from-green-50/30 to-emerald-50/30"></div>
             <div className="relative z-10">
               <Image
-                src="/png-thi.jpg"
+                src="/the-png.jpg"
                 alt="MintFix Launch Banner with QR Code"
                 width={800}
                 height={600}
@@ -325,6 +326,7 @@ export default function Page() {
 
         {/* Footer Info */}
         <motion.section
+          className="mb-16 sm:mb-20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-10%" }}
@@ -346,7 +348,7 @@ export default function Page() {
                   <ExternalLink className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
                 <div>
-                  <p className="font-bold text-green-400 text-base sm:text-lg">Website</p>
+                  <p className="font-bold text-green-400 text-base sm:text-lg">🔗 Website</p>
                   <a
                     href="https://mintfix.blog"
                     className="text-white hover:text-green-400 transition-colors text-sm sm:text-lg break-all"
@@ -364,10 +366,107 @@ export default function Page() {
                   <Calendar className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
                 <div>
-                  <p className="font-bold text-blue-400 text-base sm:text-lg">Official Launch</p>
-                  <p className="text-white text-sm sm:text-lg">15 June 2025, 7:30 PM IST</p>
+                  <p className="font-bold text-blue-400 text-base sm:text-lg">📅 Official Launch</p>
+                  <p className="text-white text-sm sm:text-lg">27 June 2025, 12:21 PM – 12:45 PM IST</p>
                 </div>
               </motion.div>
+            </div>
+          </motion.div>
+        </motion.section>
+
+        {/* Terms and Conditions Section */}
+        <motion.section
+          className="mb-16 sm:mb-20"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-10%" }}
+          transition={{ duration: 0.5 }}
+        >
+          <motion.div
+            className="relative backdrop-blur-xl bg-white/80 rounded-3xl shadow-2xl p-6 sm:p-10 max-w-5xl mx-auto border border-white/30 overflow-hidden"
+            whileHover={{ y: -5 }}
+            transition={{ duration: 0.3 }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-slate-50/50 to-gray-50/50"></div>
+            <div className="relative z-10">
+              <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-6 sm:mb-8">
+                <motion.div
+                  className="relative p-3 bg-gradient-to-br from-slate-400 to-gray-500 rounded-2xl"
+                  animate={{
+                    opacity: [1, 0.8, 1],
+                    scale: [1, 1.05, 1],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Number.POSITIVE_INFINITY,
+                    ease: "easeInOut",
+                  }}
+                >
+                  <FileText className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                </motion.div>
+                <h3 className="text-2xl sm:text-4xl font-black bg-gradient-to-r from-gray-800 to-slate-600 bg-clip-text text-transparent text-center sm:text-left">
+                  📜 Terms and Conditions
+                </h3>
+              </div>
+              <div className="text-gray-700 space-y-4 sm:space-y-6 text-sm sm:text-base leading-relaxed">
+                <p className="font-semibold">Effective Date: June 27, 2025</p>
+                <p>
+                  Welcome to MintFix. By accessing or using our website located at https://mintfix.blog, you agree to be legally bound by the following Terms and Conditions. If you do not agree with any part of these terms, please refrain from using the Website.
+                </p>
+
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-bold text-gray-800 mb-2">1. Use of the Website</h4>
+                    <ul className="list-disc list-inside space-y-1 text-gray-600">
+                      <li>You agree to use the Website only for lawful, legitimate, and ethical purposes.</li>
+                      <li>You must not use the Website in any manner that could damage, disable, overburden, or impair its availability or accessibility.</li>
+                      <li>Unauthorized access to any part of the Website, server, or connected systems is strictly prohibited.</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-gray-800 mb-2">2. Content Disclaimer</h4>
+                    <ul className="list-disc list-inside space-y-1 text-gray-600">
+                      <li>All content published on MintFix is intended for informational and educational purposes only.</li>
+                      <li>We do not provide financial, investment, legal, or tax advice.</li>
+                      <li>Always consult a qualified professional before making financial or investment decisions based on any information found on this Website.</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-gray-800 mb-2">3. Intellectual Property</h4>
+                    <ul className="list-disc list-inside space-y-1 text-gray-600">
+                      <li>Unless otherwise stated, all content on this Website—including but not limited to text, graphics, images, logos, and design—is the intellectual property of MintFix and protected under applicable copyright laws.</li>
+                      <li>You may not reproduce, distribute, modify, or republish any part of the Website without express written consent from MintFix.</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-gray-800 mb-2">4. Third-Party Links</h4>
+                    <ul className="list-disc list-inside space-y-1 text-gray-600">
+                      <li>This Website may contain links to third-party websites or services that are not owned or controlled by MintFix.</li>
+                      <li>We do not endorse or assume any responsibility for the content, privacy policies, or practices of any third-party websites.</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-gray-800 mb-2">5. Limitation of Liability</h4>
+                    <ul className="list-disc list-inside space-y-1 text-gray-600">
+                      <li>MintFix shall not be held liable for any direct, indirect, incidental, consequential, or punitive damages arising from your access to or use of the Website.</li>
+                      <li>Your use of the Website is at your sole risk.</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-gray-800 mb-2">6. Modifications to Terms</h4>
+                    <ul className="list-disc list-inside space-y-1 text-gray-600">
+                      <li>MintFix reserves the right to update, revise, or modify these Terms and Conditions at any time without prior notice.</li>
+                      <li>The latest version will always be posted on this page with a revised Effective Date.</li>
+                      <li>Continued use of the Website following any changes constitutes your acceptance of the updated Terms.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </motion.div>
         </motion.section>
